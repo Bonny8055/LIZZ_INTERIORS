@@ -1538,14 +1538,14 @@
             });
             
             // Table
-            const table = new THREE.Mesh(new THREE.BoxGeometry(2, 0.1, 1), furnitureMaterial);
+            const table = new THREE.Mesh(new THREE.BoxGeometry(2, 0.1, 4), furnitureMaterial);
             table.position.set(0, -1, 0);
             table.castShadow = true;
             group.add(table);
             
             // Chairs
             for (let i = 0; i < 2; i++) {
-                const chair = new THREE.Mesh(new THREE.BoxGeometry(0.5, 1, 0.5), furnitureMaterial);
+                const chair = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.2, 0.5), furnitureMaterial);
                 chair.position.set(i * 2 - 0.5, -1.5, 1.5);
                 chair.castShadow = true;
                 group.add(chair);
